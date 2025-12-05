@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!--  Search bar -->
+    <div class="search-bar">
+      <img src="icons/search.svg" alt="search" class="search-icon">
+      <input type="text" placeholder="Search City....">
+    </div>
+
+    <!--  Weather Card -->
+    <section class="weather-card">
+      <div class="location">
+        <img src="icons/location.svg" alt="location">
+        <span>India</span>
+      </div>
+
+      <!-- Toggle F / C -->
+      <div class="toggle">
+        <button class="f active">F</button>
+        <button class="c">C</button>
+      </div>
+
+      <div class="main-info">
+        <div class="left">
+          <h2>Monday</h2>
+          <p class="date">24 Dec, 2023</p>
+          <h1>26°C</h1>
+          <p class="range">High: 27 Low: 10</p>
+        </div>
+
+        <div class="right">
+          <img src="icons/cloudy.png" alt="cloudy" class="big-icon">
+          <h3>Cloudy</h3>
+          <p>Feels Like 26</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

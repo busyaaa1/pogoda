@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Dela+Gothic+One&family=Momo+Trust+Display&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Momo Trust Display", sans-serif;
+}
+
+body {
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 600px;
+}
+
+/* 🔍 Search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #0c0f1b;
+  border-radius: 40px;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+}
+
+.search-bar .search-icon {
+  width: 18px;
+  height: 18px;
+  /* filter: invert(1); */
+  opacity: 0.7;
+  margin-right: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* 🌦️ Weather card */
+.weather-card {
+  position: relative;
+  background: #0c0f1b;
+  color: white;
+  padding: 40px 35px;
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* 📍 Location badge */
+.location {
+  display: inline-flex;
+  align-items: center;
+  background: #742fff;
+  padding: 6px 18px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.location img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  /* filter: invert(1); */
+}
+
+/* 🌡️ Toggle */
+.toggle {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  background: #000;
+  border-radius: 25px;
+  display: flex;
+  overflow: hidden;
+}
+
+.toggle button {
+  border: none;
+  background: transparent;
+  color: white;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.toggle .active {
+  background: white;
+  color: black;
+}
+
+/* 🕒 Info layout */
+.main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Left info */
+.left h2 {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.date {
+  font-size: 16px;
+  color: #bbb;
+  margin-top: 5px;
+}
+
+.small-icon {
+  width: 35px;
+  opacity: 0.8;
+  margin: 20px 0 15px 0;
+}
+
+.left h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.range {
+  font-size: 15px;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+/* Right info */
+.right {
+  text-align: center;
+}
+
+.big-icon {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.right h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.right p {
+  font-size: 15px;
+  color: #ccc;
+}
